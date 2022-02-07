@@ -8,12 +8,19 @@ function TinderCards() {
 
     useEffect(() => {
 
-        const unsubscribe = database.collection('people').onSnapshot(snapshot => (
-            setPeople(snapshot.docs.map((doc) => doc.data()))
-        ))
-        return () => {
-            unsubscribe();
-        };
+        database.collection("people").get().then((docData => {
+            console.log(docData)
+            var peopleArray = [];
+            docData.forEach((doc) => {
+                console.log(doc.id, " => ", doc.data());
+                peopleArray.push(doc.data())
+
+            });
+            setPeople(peopleArray)
+
+            
+        }))
+        
     }, [])
 
     return (

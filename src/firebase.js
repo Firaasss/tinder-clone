@@ -1,13 +1,13 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-      apiKey: "AIzaSyC-fNA4V9EhKMhbYj-jpjIi6Fo4Dpw09A4",
-      authDomain: "tinder-clone-38f65.firebaseapp.com",
-      projectId: "tinder-clone-38f65",
-      storageBucket: "tinder-clone-38f65.appspot.com",
-      messagingSenderId: "468222179211",
-      appId: "1:468222179211:web:8899bc9a4bdd471a6ca18e",
-      measurementId: "G-EG2150MLH5"
+    apiKey: "AIzaSyCntm3m9CR3_RwX6EGkvTMvWQ0xp0cZP4U",
+    authDomain: "tinderclone-fac92.firebaseapp.com",
+    projectId: "tinderclone-fac92",
+    storageBucket: "tinderclone-fac92.appspot.com",
+    messagingSenderId: "503537817972",
+    appId: "1:503537817972:web:49fef963a1511907e27421",
+    measurementId: "G-QM44YBMHE2"
     };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

@@ -23,7 +23,7 @@ function Header({ backButton }) {
             )}
             <Link to="/">
                 <img className="header__logo"
-                src="https://1000logos.net/wp-content/uploads/2018/07/Tinder-logo.jpg" alt="tinder logo"/>
+                src="https://assets-global.website-files.com/5f7adad57379a36d83a3972a/602c1b470faa6d98ccdb231f_salams_site_logo.svg" alt="tinder logo"/>
             </Link>
             <Link to="/chat">
                 <IconButton>
