@@ -9,16 +9,12 @@ function TinderCards() {
     useEffect(() => {
 
         database.collection("people").get().then((docData => {
-            console.log(docData)
             var peopleArray = [];
             docData.forEach((doc) => {
                 console.log(doc.id, " => ", doc.data());
                 peopleArray.push(doc.data())
-
-            });
+            }); 
             setPeople(peopleArray)
-
-            
         }))
         
     }, [])
@@ -31,13 +27,14 @@ function TinderCards() {
                 className="swipe"
                 key={person.name}
                 preventSwipe={['up', 'down']}
-
                 >
+
+                    <h2>{person.name}</h2>
                     <div 
                     style={{ backgroundImage: `url(${person.url})` }}
                     className="card"
                     >
-                        <h3>{person.name}</h3>
+                        <h3>{person.location}</h3>
                     </div>
                 </TinderCard>
             ))}
